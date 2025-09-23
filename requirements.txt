@@ -1,7 +1,8 @@
-streamlit==1.25.0
-pillow
+streamlit
 pandas
 numpy
-plotly
 matplotlib
 seaborn
+plotly
+altair
+Pillow
