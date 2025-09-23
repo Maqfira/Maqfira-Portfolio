@@ -131,7 +131,7 @@ Software Developer & Aspiring Data Analyst | Delivering Scalable Solutions and A
                 st.markdown(
                 f"""
                 <a href="{call_link}">
-                    <button style="
+                    <button class='but' style="
                         background-color:#4CAF50;
                         color:white;
                         padding:10px 20px;
@@ -143,6 +143,13 @@ Software Developer & Aspiring Data Analyst | Delivering Scalable Solutions and A
                     Call Me
                     </button>
                 </a>
+                <style>
+                  @media (max-width: 600px) {{  /* Mobile */
+                    .but {{
+                        margin-top:8px;
+                    }}
+                }}
+                </style>
                 """,
                 unsafe_allow_html=True
             )
@@ -209,7 +216,7 @@ Software Developer & Aspiring Data Analyst | Delivering Scalable Solutions and A
                 </style>
                 <div class="profile-img-container">
                     <img class="profile-img" src="data:image/png;base64,{img_str}" 
-                        style="box-shadow: 0 0 20px #40E0D0, 0 0 20px #40E0D0, 0 0 20px #40E0D0;">
+                        >
                 </div>
                 """,
                 unsafe_allow_html=True
