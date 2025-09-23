@@ -1,0 +1,7 @@
+streamlit==1.25.0
+pillow
+pandas
+numpy
+plotly
+matplotlib
+seaborn
