@@ -59,8 +59,8 @@ def show_home():
             """
             <style>
             h1, h2, h3, p {
-                margin: 1px;
-                padding: 1px;
+                margin: 1px !important;
+                padding: 1px !important;
                 color:white;
             }
             .animated-title {
@@ -99,8 +99,8 @@ def show_home():
         st.header("Hello, It's Me")
         st.markdown("""
 <div style=" font-family:'Poppins', sans-serif; color:#ffffff;">
-    <h1 class='animated-title' style="margin-bottom:10px;">Maqfira Sarwar!</h1>
-    <h3 style="font-weight:400; margin-bottom:10px;">
+    <h1 class='animated-title' style="margin-bottom:5px;">Maqfira Sarwar!</h1>
+    <h3 style="font-weight:400; margin-bottom:5px;">
         I'm a <span class="animated-text"></span>
     </h3>
     <h3 style="font-size: clamp(1rem, 2.5vw, 1.5rem); font-weight:400; color:#ffffff;">
