@@ -36,6 +36,19 @@ def show_home():
         box-shadow: 0 0 5px #40E0D0;
         outline: none !important;
     }
+                /* Remove default padding/margin for main container */
+.css-18e3th9 {  /* main container class */
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+/* Remove extra spacing for title and sections */
+.css-1d391kg { /* container for sections */
+    padding: 0rem !important;
+}
+
     </style>
 """, unsafe_allow_html=True)
     col1, col2 = st.columns([1, 0.5])
@@ -84,23 +97,17 @@ def show_home():
         )
 
         st.header("Hello, It's Me")
-        st.markdown("<h1 class='animated-title'>Maqfira Sarwar!</h1>", unsafe_allow_html=True)
-        st.markdown(
-            """
-            <h3 style="font-weight:400;">
-                I'm a <span class="animated-text"></span>
-            </h3>
-            """,
-            unsafe_allow_html=True
-        )
-        st.markdown(
-            """
-            <h3 style='font-size: clamp(1rem, 2.5vw, 1.5rem); font-weight: 400; color: #ffffff;'>
-            Software Developer & Aspiring Data Analyst | Delivering Scalable Solutions and Actionable Insights
-            </h3>
-            """,
-            unsafe_allow_html=True
-        )
+        st.markdown("""
+<div style=" font-family:'Poppins', sans-serif; color:#ffffff;">
+    <h1 class='animated-title' style="margin-bottom:10px;">Maqfira Sarwar!</h1>
+    <h3 style="font-weight:400; margin-bottom:10px;">
+        I'm a <span class="animated-text"></span>
+    </h3>
+    <h3 style="font-size: clamp(1rem, 2.5vw, 1.5rem); font-weight:400; color:#ffffff;">
+        Software Developer & Aspiring Data Analyst | Delivering Scalable Solutions and Actionable Insights
+    </h3>
+</div>
+""", unsafe_allow_html=True)
 
         # Social icons
         social_icons_data = {
